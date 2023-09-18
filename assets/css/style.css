@@ -367,12 +367,6 @@ header nav .links-list > ul .list-item li a:hover {
     color: #C5942D;
 }
 
-header nav .profile-content {
-    color: #656565;
-    position: relative;
-    margin-left: 15px;
-}
-
 header nav .profile-content .profile-img img {
     width: 35px;
     border-radius: 50%;
@@ -787,7 +781,7 @@ header nav .links-list > ul .list-item:hover .drop-list {
 	z-index: 3;
 }
 .cta-section h2 {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 600;
     color: #fff;
     margin: -0.12em 0 0.4em;
@@ -1090,7 +1084,7 @@ footer .footer-bottom .footer-social .social-list li a:hover {
 		padding: 130px 0;
 	}
 	.cta-section h2 {
-		font-size: 80px;
+		font-size: 5rem;
 	}
     .breadcrumb-wrapper {
         padding: 4rem 0;
@@ -1157,7 +1151,7 @@ footer .footer-bottom .footer-social .social-list li a:hover {
 		padding: 110px 0;
 	}
 	.cta-section h2 {
-		font-size: 60px;
+		font-size: 3.75rem;
 	}
 	.contact-section-2 .contact-form {
 		min-height: 500px;

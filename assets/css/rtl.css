@@ -1,36 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');*/
 
 *:not(i) {
-    font-family: 'Tajawal', sans-serif ;
+/*    font-family: 'Tajawal', sans-serif ;*/
+    font-family: 'Almarai', sans-serif;
 }
 html, body {
 	direction: rtl;
 	text-align: right;
 }
-#scroll-top {
-	left: 17px;
-	right: auto;
-}
-#scroll-top span:first-child {
-    right: 50%;
-	left: auto;
-    margin-right: -9px;
-	margin-left: 0;
+.section-title span,
+.hero-section .hs-content .title,
+.about-section .agency-block .title {
+    font-family: 'Tajawal', sans-serif
 }
 
-header nav .links-list > ul .list-item .link {
-	font-size: 16px;
-}
 header nav .links-list {
     margin-right: auto;
 	margin-left: 0;
 }
 header nav .links-list > ul .list-item.dropdown .link i {
 	margin-right: 3px;
-	margin-left: 0;
-}
-header nav .profile-content {
-	margin-right: 15px;
 	margin-left: 0;
 }
 header.sticky {
@@ -47,14 +38,6 @@ header nav .links-list > ul .list-item {
 }
 header nav .links-list > ul .list-item:last-child {
     margin-left: 0;
-}
-header nav .profile-content .profile-img img {
-	margin-left: 7px;
-	margin-right: 0;
-}
-header nav .profile-content .dropdown li i {
-    margin-left: 5px;
-	margin-right: 0;
 }
 header nav .links-list > ul .list-item.dropdown:hover i {
     -webkit-transform: rotate(-90deg);
@@ -77,26 +60,7 @@ header nav .links-list > ul .list-item.dropdown:hover i {
 	margin-left: 10px;
 	margin-right: 0;
 }
-.events-section .event-card .card-details {
-	padding: .5em .8em;
-    padding-right: 80px;
-    right: 0;
-	left: auto;
-}
-.events-section .event-card .card-details:after {
-    right: 15px;
-	left: auto;
-    border-right: 3px solid #fff;
-	border-left: 0;
-	transform: translate(-100%, -50%);
-}
-.events-section .event-card .card-details::before {
-    left: 15px;
-	right: auto;
-    border-left: 3px solid #fff;
-	border-right: 0;
-	transform: translate(100%, 50%);
-}
+
 footer .follow p {
     margin-right: 10px;
 	margin-left: 0;
@@ -105,17 +69,37 @@ footer .footer-bottom .footer-social .social-list li {
     margin-right: 20px;
 	margin-left: 0;
 }
-.projects-section .project-card .card-img .img-holder:before {
-	right: 0;
-	left: auto;
+
+.glass-effect {
+    right: calc(50% - 350px);
+    left: auto;
 }
-.events-section .owl-theme .owl-nav [class*=owl-] {
-	font-size: 16px;
-	letter-spacing: 0;
+.glass-effect:before {
+    right: 320px;
+    left: auto;
 }
-.events-section .event-card {
-	direction: rtl;
+.glass-effect:after {
+    right: 0;
+    left: auto;
 }
+.breadcrumb-wrapper:before {
+    right: 0;
+    left: auto;
+}
+
+/*
+.hero-section .video-container video {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero-section .hs-overlay {
+    left: 0px;
+}
+.hero-section .hs-content {
+    left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+*/
 
 
 .fa-arrow-left:before {
@@ -149,27 +133,11 @@ footer .footer-bottom .footer-social .social-list li {
 
 
 @media (min-width: 1200px) {
-	.events-section .owl-theme .owl-nav .owl-prev, .page-details-section .owl-theme .owl-nav .owl-prev {
-		-webkit-transform: rotate(90deg);
-		-ms-transform: rotate(90deg);
-		transform: rotate(90deg);
-		right: -85px;
-		left: auto;
-	}
-	.events-section .owl-theme .owl-nav .owl-next, .page-details-section .owl-theme .owl-nav .owl-next {
-		-webkit-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-		left: -85px;
-		right: auto;
-	}
+	
 }
 
 @media(max-width: 1199px) {
-	.events-section .event-card .card-details {
-		padding-right: 30px;
-		padding-left: 0;
-	}
+	
 }
 
 @media(max-width: 991px) {
@@ -177,12 +145,5 @@ footer .footer-bottom .footer-social .social-list li {
 		right: 0;
 		left: auto;
 	}
-	header nav .profile-content {
-        margin-right: auto;
-        margin-left: 15px;
-    }
-	#scroll-top span:first-child {
-        margin-right: -5px;
-		margin-left: 0;
-    }
+	
 }
